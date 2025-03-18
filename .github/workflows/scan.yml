@@ -8,12 +8,7 @@ on:
         docker_image:
           description: 'The Docker image to scan'
           required: true
-          default: 'appsecco/dvna:sqlite'
-
-# env:
-#   REGISTRY: ghcr.io
-#   IMAGE_NAME: ${{ github.repository }}
-#   SHA: ${{ github.event.pull_request.head.sha || github.event.after }}
+          default: 'appsecco/node-reverse-shell:latest'
 
 jobs:
   scout:
